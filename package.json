@@ -1,5 +1,5 @@
 {
-  "name": "vue-generate-component",
+  "name": "vue-generate-build",
   "version": "3.0.1",
   "description": "Vue js component generator",
   "main": "lib/vgc.js",
@@ -21,11 +21,11 @@
   "author": "Netanel Basal <netanel7799@gmail.com>",
   "license": "ISC",
   "bin": {
-    "vgc": "dist/vgc.js"
+    "vgb": "dist/vgc.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NetanelBasal/vue-generate-component"
+    "url": "https://github.com/miguelhemmm/vue-generate-component"
   },
   "dependencies": {
     "command-line-args": "^2.1.3",

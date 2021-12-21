@@ -6,17 +6,17 @@ export default {
   data () {
     return {
 
-    }
+    };
   },
   computed: {
 
   },
-  mounted () {
+  mounted() {
 
   },
   methods: {
 
-  }
+  },
 }
 
 {% else %}
