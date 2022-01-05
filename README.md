@@ -119,7 +119,7 @@ will generate one vue file:
     data() {
       return {
 
-      }
+      };
     },
     methods: {
 
@@ -127,7 +127,7 @@ will generate one vue file:
     computed: {
 
     }
-}
+};
 </script>
 
 <style scoped lang="scss">

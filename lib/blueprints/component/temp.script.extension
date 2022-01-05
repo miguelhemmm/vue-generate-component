@@ -17,7 +17,7 @@ export default {
   methods: {
 
   },
-}
+};
 
 {% else %}
 import {Component, Vue} from "vue-property-decorator";
