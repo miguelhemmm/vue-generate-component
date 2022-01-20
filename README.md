@@ -14,13 +14,13 @@ npm install -g vue-generate-build
 vgc --help
 ```
 
-### Create new component
+### Create new component (block level)
 
 ```bash
 vgc footer
 ```
 
-Will generate five files:
+Will generate four files:
 
 **footer.js**
 
@@ -35,40 +35,6 @@ export default {
   methods: {},
   computed: {}
 };
-```
-
-**footer.spec.js**
-
-```javascript
-import Vue from 'vue';
-import FooterComponent from './index.vue';
-
-// Here are some Jasmine 2.0 tests, though you can
-// use any test runner / assertion library combo you prefer
-describe('FooterComponent', () => {
-  // Inspect the raw component options
-  it('has a created hook', () => {
-    // expect(typeof FooterComponent.created).toBe('function');
-  });
-  // Evaluate the results of functions in
-  // the raw component options
-  it('sets the correct default data', () => {
-    // expect(typeof FooterComponent.data).toBe('function')
-    // const defaultData = FooterComponent.data();
-    // expect(defaultData.message).toBe('hello!');
-  });
-  // Inspect the component instance on mount
-  it('correctly sets the message when created', () => {
-    // const vm = new Vue(FooterComponent).$mount();
-    // expect(vm.message).toBe('bye!');
-  });
-  // Mount an instance and inspect the render output
-  it('renders the correct message', () => {
-    // const Ctor = Vue.extend(FooterComponent);
-    // const vm = new Ctor().$mount();
-    // expect(vm.$el.textContent).toBe('bye!');
-  });
-});
 ```
 
 **footer.html**
@@ -92,6 +58,71 @@ describe('FooterComponent', () => {
 <template src="./footer.component.html"></template>
 <script src="./footer.component.js"></script>
 <style src="./footer.component.scss" scoped lang="scss"></style>
+```
+
+### Create new build for a brand
+
+```bash
+vgc -b vidanta
+```
+
+Will generate five files:
+
+**vidanta.js**
+
+```javascript
+export default {
+  name: 'App',
+  components: {
+
+  },
+};
+
+```
+
+**vidanta.html**
+
+```html
+<section class="vidanta">
+  <h1>Vidanta Component</h1>
+</section>
+```
+
+**vidanta.scss**
+
+```css
+@import '../../assets/styles/main.scss';
+
+/*=== Body Color ===*/
+$body-color: #4c4c4c;
+/*=== Brand Primary Color ===*/
+$brand-primary: #002e5d;
+/*=== Brand Secondary Color ===*/
+$brand-secondary: #61c9ce;
+/*=== Brand Primary Tertiary Color ===*/
+$brand-tertiary: #b8b8b8;
+
+.footer {
+}
+```
+
+**index.vue**
+
+```html
+<template src="./footer.component.html"></template>
+<script src="./footer.component.js"></script>
+<style src="./footer.component.scss" scoped lang="scss"></style>
+```
+
+**main.js**
+
+```html
+import { createApp } from 'vue';
+import Index from './index.vue';
+import '../../assets/styles/main.scss';
+
+createApp(Index).mount('#app');
+
 ```
 
 ### Create new component single file

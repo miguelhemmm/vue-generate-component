@@ -1,0 +1,15 @@
+@import '../../assets/styles/main.scss';
+
+/*=== Body Color ===*/
+$body-color: #4c4c4c;
+/*=== Brand Primary Color ===*/
+$brand-primary: #002e5d;
+/*=== Brand Secondary Color ===*/
+$brand-secondary: #61c9ce;
+/*=== Brand Primary Tertiary Color ===*/
+$brand-tertiary: #b8b8b8;
+
+
+.{{name | kebabCase}} {
+
+}
