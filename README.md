@@ -116,7 +116,7 @@ $brand-tertiary: #b8b8b8;
 
 **main.js**
 
-```html
+```javascript
 import { createApp } from 'vue';
 import Index from './index.vue';
 import '../../assets/styles/main.scss';
