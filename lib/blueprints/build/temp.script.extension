@@ -1,6 +1,19 @@
 export default {
-  name: 'App',
-  components: {
+  name: '{{name | kebabCase}}',
+  components: {},
+  props: [],
+  data() {
+    return {
+
+    };
+  },
+  computed: {
+
+  },
+  mounted() {
+
+  },
+  methods: {
 
   },
 };
