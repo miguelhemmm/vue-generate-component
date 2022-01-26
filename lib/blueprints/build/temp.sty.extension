@@ -8,6 +8,7 @@ $brand-secondary: #61c9ce;
 /*=== Brand Primary Tertiary Color ===*/
 $brand-tertiary: #b8b8b8;
 
+@import "@/assets/styles/main.scss";
 
 .{{name | kebabCase}} {
 
