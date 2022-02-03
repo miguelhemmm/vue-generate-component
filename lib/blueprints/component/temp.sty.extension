@@ -1,3 +1,7 @@
+@import '../{{parentName}}.scss';
+
+
+
 .{{name | kebabCase}} {
 
 }
